@@ -1,0 +1,1798 @@
+<ion-content>
+  <div class="utilitypage">
+
+    <!-- <div class="home-header">
+      <div class="greet-text">
+        <h1>Hello, Deepak  <i class="fa-solid fa-hand"></i></h1>
+      </div>
+    </div> -->
+
+    <ion-row class="landing-header ion-align-items-center p-0">
+      <ion-col size="9">
+        <h1>Hello, Deepak <img src="../../assets/images/icon-hand.svg" alt=""></h1>
+      </ion-col>
+
+      <ion-col size="3" class="ion-text-right p-0">
+        <div class="header-btns">
+          <button class="btn-secondary btn-head-home" ion-button full no-margin><i
+              class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn-secondary btn-head-home" ion-button full no-margin><i
+              class="fa-solid fa-bell"></i></button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <div class="gap"></div>
+
+    <button class="btn-large btn-primary" ion-button full no-margin>Confirm Cancellation</button>
+
+    <div class="gap"></div>
+
+    <ion-row>
+      <ion-col size="6">
+        <button class="btn-small btn-primary" ion-button full no-margin>Cancel Booking</button>
+      </ion-col>
+      <ion-col size="6">
+        <button class="btn-small btn-secondary" ion-button full no-margin>Cancel Booking</button>
+      </ion-col>
+    </ion-row>
+
+    <div class="gap"></div>
+
+    <ion-card class="bg-secondary shadow-none">
+      <ion-card-content>
+        <form>
+          <ion-row>
+            <ion-col size="12">
+              <div class="form-group">
+                <ion-label class="control-label">Room Type</ion-label>
+                <ion-select class="form-control" placeholder="Select Room Type">
+                  <ion-select-option value="one">one</ion-select-option>
+                  <ion-select-option value="two">two</ion-select-option>
+                  <ion-select-option value="three">three</ion-select-option>
+                </ion-select>
+              </div>
+            </ion-col>
+
+            <ion-col size="12">
+              <div class="form-group">
+                <ion-label class="control-label">No. of Rooms</ion-label>
+                <ion-input class="form-control" type="name" placeholder="Enter No. of Rooms"></ion-input>
+              </div>
+            </ion-col>
+
+            <ion-col size="6">
+              <div class="form-group">
+                <ion-label class="control-label">Check In</ion-label>
+                <input class="form-control" type="date" name="checkin" placeholder="DD/MM/YY">
+              </div>
+            </ion-col>
+
+            <ion-col size="6">
+              <div class="form-group">
+                <ion-label class="control-label">Check Out</ion-label>
+                <input class="form-control" type="date" name="checkout" placeholder="DD/MM/YY">
+              </div>
+            </ion-col>
+
+            <ion-col size="12">
+              <button class="btn-large btn-primary" ion-button full no-margin>Search Room</button>
+            </ion-col>
+          </ion-row>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- book room form  with accordion-->
+  <div style="padding-bottom: 500px;">
+    <form action="">
+      <ion-accordion-group>
+        <ion-accordion class="accordion-book-room common-accordion mb-15" value="first">
+          <ion-item slot="header" color="light" class="accrodion-header">
+            <ion-label class="text-primary">Deluxe Room 1</ion-label>
+          </ion-item>
+          <div class="p-10" slot="content">
+            <ion-row>
+              <ion-col size="12">
+                <div class="form-group">
+                  <ion-label class="control-label">Guest Name</ion-label>
+                  <ion-input class="form-control" type="text" name="guestName" placeholder="Enter Guest Name">
+                  </ion-input>
+                </div>
+              </ion-col>
+
+              <ion-col size="4">
+                <div class="form-group">
+                  <ion-label class="control-label">Adults</ion-label>
+                  <button class="touchspin-minus position-absolute">
+                    <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                  </button>
+                  <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                  <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+              </ion-col>
+
+              <ion-col size="4">
+                <div class="form-group">
+                  <ion-label class="control-label">Childern (2.5+)</ion-label>
+                  <button class="touchspin-minus position-absolute">
+                    <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                  </button>
+                  <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                  <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+              </ion-col>
+
+              <ion-col size="4">
+                <div class="form-group">
+                  <ion-label class="control-label">Extra Matt</ion-label>
+                  <button class="touchspin-minus position-absolute">
+                    <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                  </button>
+                  <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                  <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+              </ion-col>
+
+              <ion-col size="12">
+                <div class="form-group">
+                  <ion-label class="control-label">Meal Plan</ion-label>
+                  <ion-select class="form-control" placeholder="Select Meal Plan">
+                    <ion-select-option value="one">MAP</ion-select-option>
+                    <ion-select-option value="two">CP</ion-select-option>
+                    <ion-select-option value="three">EP</ion-select-option>
+                  </ion-select>
+                </div>
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-accordion>
+
+        <ion-accordion class="accordion-book-room common-accordion mb-15" value="second">
+          <ion-item slot="header" color="light" class="accrodion-header">
+            <ion-label class="text-primary">Deluxe Room 2</ion-label>
+          </ion-item>
+          <div class="p-10" slot="content">
+            <ion-row>
+              <ion-col size="12">
+                <div class="form-group">
+                  <ion-label class="control-label">Guest Name</ion-label>
+                  <ion-input class="form-control" type="text" name="guestName" placeholder="Enter Guest Name">
+                  </ion-input>
+                </div>
+              </ion-col>
+
+              <ion-col size="4">
+                <div class="form-group">
+                  <ion-label class="control-label">Adults</ion-label>
+                  <button class="touchspin-minus position-absolute">
+                    <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                  </button>
+                  <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                  <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+              </ion-col>
+
+              <ion-col size="4">
+                <div class="form-group">
+                  <ion-label class="control-label">Childern (2.5+)</ion-label>
+                  <button class="touchspin-minus position-absolute">
+                    <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                  </button>
+                  <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                  <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+              </ion-col>
+
+              <ion-col size="4">
+                <div class="form-group">
+                  <ion-label class="control-label">Extra Matt</ion-label>
+                  <button class="touchspin-minus position-absolute">
+                    <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                  </button>
+                  <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                  <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+              </ion-col>
+
+              <ion-col size="12">
+                <div class="form-group">
+                  <ion-label class="control-label">Meal Plan</ion-label>
+                  <ion-select class="form-control" placeholder="Select Meal Plan">
+                    <ion-select-option value="one">MAP</ion-select-option>
+                    <ion-select-option value="two">CP</ion-select-option>
+                    <ion-select-option value="three">EP</ion-select-option>
+                  </ion-select>
+                </div>
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+
+      <!-- submit buttons -->
+      <ion-row class="px-10">
+        <ion-col size="6">
+          <button class="btn-large btn-secondary">Add To Cart</button>
+        </ion-col>
+        <ion-col size="6">
+          <button class="btn-large btn-primary">Book Rooms</button>
+        </ion-col>
+      </ion-row>
+    </form>
+    <!-- end book room form with accordion -->
+
+
+
+    <div class="gap"></div>
+
+
+    <!-- book room without accordion -->
+    <ion-card class="shadow-none card-book-room">
+      <ion-card-header class="bg-secondary p-15">
+        <h3 class="text-primary">Deluxe Room 2</h3>
+      </ion-card-header>
+      <ion-card-content>
+        <form action="">
+          <ion-row>
+            <ion-col size="12">
+              <div class="form-group">
+                <ion-label class="control-label">Guest Name</ion-label>
+                <ion-input class="form-control" type="text" name="guestName" placeholder="Enter Guest Name">
+                </ion-input>
+              </div>
+            </ion-col>
+
+            <ion-col size="4">
+              <div class="form-group">
+                <ion-label class="control-label">Adults</ion-label>
+                <button class="touchspin-minus position-absolute">
+                  <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                </button>
+                <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+              </div>
+            </ion-col>
+
+            <ion-col size="4">
+              <div class="form-group">
+                <ion-label class="control-label">Childern (2.5+)</ion-label>
+                <button class="touchspin-minus position-absolute">
+                  <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                </button>
+                <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+              </div>
+            </ion-col>
+
+            <ion-col size="4">
+              <div class="form-group">
+                <ion-label class="control-label">Extra Matt</ion-label>
+                <button class="touchspin-minus position-absolute">
+                  <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                </button>
+                <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                <button class="touchspin-plus position-absolute"><i class="fa-solid fa-circle-plus"></i></button>
+              </div>
+            </ion-col>
+
+            <ion-col size="12">
+              <div class="form-group">
+                <ion-label class="control-label">Meal Plan</ion-label>
+                <ion-select class="form-control" placeholder="Select Meal Plan">
+                  <ion-select-option value="one">MAP</ion-select-option>
+                  <ion-select-option value="two">CP</ion-select-option>
+                  <ion-select-option value="three">EP</ion-select-option>
+                </ion-select>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <button class="btn-large btn-secondary">Add To Cart</button>
+            </ion-col>
+            <ion-col size="6">
+              <button class="btn-large btn-primary">Book Rooms</button>
+            </ion-col>
+          </ion-row>
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="gap"></div>
+
+    <button type="submit" class="btn btn-large btn-primary" (click)="openmodal()">Click me to open sweetalert</button>
+
+    <div class="gap"></div>
+
+    <ion-segment [(ngModel)]="segment" scrollable class="px-15 tab-segment">
+      <ion-segment-button value="todaybookings">
+        Today
+      </ion-segment-button>
+      <ion-segment-button value="upcomingbookings">
+        Upcoming
+      </ion-segment-button>
+      <ion-segment-button value="pastbookings">
+        History
+      </ion-segment-button>
+    </ion-segment>
+
+
+    <div [ngSwitch]="segment" class="px-15 pt-25">
+      <!-- tab one -->
+      <ion-card *ngSwitchCase="'todaybookings'" class="shadow-none">
+        <ion-card-content class="p-0">
+          <div class="form-group">
+            <ion-label class="control-label">Booking Status</ion-label>
+            <ion-select class="form-control" placeholder="Select Filter">
+              <ion-select-option value="all">All</ion-select-option>
+              <ion-select-option value="approved">Approved</ion-select-option>
+              <ion-select-option value="pending">Pending</ion-select-option>
+              <ion-select-option value="canceled">Canceled</ion-select-option>
+            </ion-select>
+          </div>
+          <ion-accordion-group [multiple]="true" [value]="['approved', 'canceled']">
+            <ion-accordion class="accordion-booking-status common-accordion mb-15" value="approved">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>25468</span></ion-label>
+                <h3 class="text-success me-15">Approved</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>8457</span></ion-label>
+                <h3 class="text-danger me-15">Canceled</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>2547</span></ion-label>
+                <h3 class="text-warning me-15">Pending</h3>
+              </ion-item>
+              <div slot="content">
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-warning">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 30 days</span>
+                  </div>
+                </div>
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>2547</span></ion-label>
+                <h3 class="text-success me-15">Approved</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 py-15 my-10">
+                  <div class="alert alert-success">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 45 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>3214</span></ion-label>
+                <h3 class="text-danger me-15">Canceled</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+          </ion-accordion-group>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- tab two -->
+      <ion-card *ngSwitchCase="'upcomingbookings'" class="shadow-none upcoming_bookings">
+        <ion-card-content class="p-0">
+          <ion-row>
+            <ion-col size="6">
+              <div class="form-group">
+                <ion-label class="control-label">From</ion-label>
+                <input class="form-control" type="date" name="upcomingdates" placeholder="DD/MM/YY">
+              </div>
+            </ion-col>
+
+            <ion-col size="6">
+              <div class="form-group">
+                <ion-label class="control-label">To</ion-label>
+                <input class="form-control" type="date" name="upcomingdates" placeholder="DD/MM/YY">
+              </div>
+            </ion-col>
+
+            <ion-col size="12">
+              <h2 class="text-primary fw_400">Approved Booking</h2>
+            </ion-col>
+          </ion-row>
+
+          <ion-accordion-group [multiple]="true" [value]="['approved', 'canceled']">
+            <ion-accordion class="accordion-booking-status common-accordion mb-15" value="approved">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>25468</span></ion-label>
+                <h3 class="text-success me-15">Approved</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>8457</span></ion-label>
+                <h3 class="text-danger me-15">Canceled</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>2547</span></ion-label>
+                <h3 class="text-warning me-15">Pending</h3>
+              </ion-item>
+              <div slot="content">
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-warning">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 30 days</span>
+                  </div>
+                </div>
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>2547</span></ion-label>
+                <h3 class="text-success me-15">Approved</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 py-15 my-10">
+                  <div class="alert alert-success">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 45 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>3214</span></ion-label>
+                <h3 class="text-danger me-15">Canceled</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+          </ion-accordion-group>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- tab three -->
+      <ion-card *ngSwitchCase="'pastbookings'" class="shadow-none">
+        <ion-card-content class="p-0">
+          <ion-row>
+            <ion-col size="4">
+              <div class="form-group">
+                <ion-label class="control-label">Booking Status</ion-label>
+                <ion-select class="form-control" placeholder="Select Filter">
+                  <ion-select-option value="all">All</ion-select-option>
+                  <ion-select-option value="approved">Approved</ion-select-option>
+                  <ion-select-option value="pending">Pending</ion-select-option>
+                  <ion-select-option value="canceled">Canceled</ion-select-option>
+                </ion-select>
+              </div>
+            </ion-col>
+            
+            <ion-col size="4">
+              <div class="form-group">
+                <ion-label class="control-label">From</ion-label>
+                <input class="form-control" type="date" name="upcomingdates" placeholder="DD/MM/YY">
+              </div>
+            </ion-col>
+
+            <ion-col size="4">
+              <div class="form-group">
+                <ion-label class="control-label">To</ion-label>
+                <input class="form-control" type="date" name="upcomingdates" placeholder="DD/MM/YY">
+              </div>
+            </ion-col>
+
+            <ion-col size="12">
+              <h2 class="text-primary fw_400">Approved Booking</h2>
+            </ion-col>
+          </ion-row>
+
+          <ion-accordion-group [multiple]="true" [value]="['approved', 'canceled']">
+            <ion-accordion class="accordion-booking-status common-accordion mb-15" value="approved">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>25468</span></ion-label>
+                <h3 class="text-success me-15">Approved</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>8457</span></ion-label>
+                <h3 class="text-danger me-15">Canceled</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>2547</span></ion-label>
+                <h3 class="text-warning me-15">Pending</h3>
+              </ion-item>
+              <div slot="content">
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-warning">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 30 days</span>
+                  </div>
+                </div>
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>2547</span></ion-label>
+                <h3 class="text-success me-15">Approved</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 py-15 my-10">
+                  <div class="alert alert-success">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 45 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+            <ion-accordion class="accordion-booking-status common-accordion mb-15">
+              <ion-item slot="header" color="light" class="accrodion-header ion-no-padding bg-secondary">
+                <ion-label class="text-primary ms-15">Booking Id: <span>3214</span></ion-label>
+                <h3 class="text-danger me-15">Canceled</h3>
+              </ion-item>
+              <div slot="content">
+
+                <div class="tables-section">
+                  <ion-row>
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Check in </span></td>
+                            <td class="ion-text-right"><strong>6 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Check out</span> </td>
+                            <td class="ion-text-right"><strong>7 Sep</strong></td>
+                          </tr>
+                          <tr>
+                            <td><span>Booking date</span></td>
+                            <td class="ion-text-right"><strong>30-Aug-22, 11:30 AM</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Guest</span></td>
+                            <td class="ion-text-center"><span>Adults</span></td>
+                            <td class="ion-text-center"><span>Childerns</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mr Vijay Sharma</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>1</strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+
+                    <ion-col size="12" class="p-0">
+                      <div class="p-10 mb-10">
+                        <table class="w-100">
+                          <tr>
+                            <td><span>Room Category</span></td>
+                            <td class="ion-text-center"><span>Room</span></td>
+                            <td class="ion-text-center"><span>Extra Matt</span></td>
+                          </tr>
+                          <tr>
+                            <td><strong>Deluxe</strong></td>
+                            <td class="ion-text-center"><strong>2</strong></td>
+                            <td class="ion-text-center"><strong>2 </strong></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row class="payment_details ion-nowrap overflow-scroll">
+                    <ion-col class=" p-10 ion-text-nowrap">
+                      <p><span>Payment details</span></p>
+                      <p><strong>Pending Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong></p>
+                      <p><span>Total Amount : <i class="fa-solid fa-indian-rupee-sign"></i> 24,400</span></p>
+                    </ion-col>
+
+                    <ion-col class="p-10 action_btns ion-text-nowrap">
+                      <button class="btn-small btn-danger mb-5" ion-button full no-margin> Cancel Booking </button>
+                      <button class="btn-small btn-success" ion-button full no-margin>Pay</button>
+                    </ion-col>
+                  </ion-row>
+                </div>
+
+                <div class="px-10 my-15">
+                  <div class="alert alert-danger">
+                    <span class="alert_icon"><i class="fa-solid fa-exclamation"></i></span>
+                    <span>Pending Amount need to pay before 15 days</span>
+                  </div>
+                </div>
+
+              </div>
+            </ion-accordion>
+
+          </ion-accordion-group>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+  <!-- end book room without accordion -->
+
+</ion-content>

@@ -1,0 +1,934 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+:root{
+    --primary-color: #091E3D;
+    --secondary-color: #EEF1F5;
+    --text-gray: #505050;
+    --color-black: #000000;
+    --color-white: #fff;
+    --red-color: #DF0014;
+    --green-color: #45AB49;
+    --yellow-color: #F6971D;
+    --input-border: #C4C4C4;
+    --light-red: #dd001c24;
+    --light-yellow: #f6971d38;
+    --light-green: #45ab4938;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+*:not(ion-icon, i){
+    font-family: "Poppins", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 26px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+h4{
+    font-size: 14px;
+}
+
+// utility css
+.gap{
+    margin: 20px 0;
+}
+
+.text-primary{
+    color: var(--primary-color) !important;
+}
+
+.bg-secondary{
+    background-color: var(--secondary-color) !important;
+}
+
+.text-success{
+    color: var(--green-color);
+}
+
+.text-white{
+    color: var(--color-white);
+}
+
+.text-danger{
+    color: var(--red-color);
+}
+
+.text-warning{
+    color: var(--yellow-color);
+}
+
+.fw_300{
+    font-weight: 300 !important;
+}
+
+.fw_400{
+    font-weight: 400 !important;
+}
+
+.fw_500{
+    font-weight: 500 !important;
+}
+
+.fw_600{
+    font-weight: 600 !important;
+}
+
+.fw_800{
+    font-weight: 800 !important;
+}
+
+.font_900{
+    font-weight: 900 !important;
+}
+
+button{
+    background-color: transparent;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-success{
+    background-color: var(--green-color);
+    color: var(--color-white);
+}
+
+.btn-danger{
+    background-color: var(--red-color);
+    color: var(--color-white);
+}
+
+.btn-large {
+    padding: 16px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-small {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+    min-width: 133px;
+    border-radius: 2px;
+}
+
+.ion-color-light {
+    --ion-color-shade: var(--secondary-color) !important;
+}
+
+
+// padding short-hand
+.p-0{
+    padding: 0 !important;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-15{
+    padding: 15px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+.p-25{
+    padding: 25px;
+}
+
+.px-0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.px-5{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.px-10{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.px-15{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.px-20{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.px-25{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.py-0{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.py-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.pb-0{
+    padding-bottom: 0 !important;
+}
+
+.pb-5{
+    padding-bottom: 5px !important;
+}
+
+.pb-10{
+    padding-bottom: 10px !important;
+}
+
+.pb-15{
+    padding-bottom: 15px !important;
+}
+
+.pb-20{
+    padding-bottom: 20px !important;
+}
+
+.pb-25{
+    padding-bottom: 25px !important;
+}
+
+.pt-0{
+    padding-top: 0 !important;
+}
+
+.pt-5{
+    padding-top: 5px !important;
+}
+
+.pt-10{
+    padding-top: 10px !important;
+}
+
+.pt-15{
+    padding-top: 15px !important;
+}
+
+.pt-20{
+    padding-top: 20px !important;
+}
+
+.pt-25{
+    padding-top: 25px !important;
+}
+
+.pt-30{
+    padding-top: 30px !important;
+}
+
+
+// margins short-hands
+.m-0{
+    margin: 0;
+}
+
+.mb-5{
+    margin-bottom: 5px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-25{
+    margin-bottom: 25px;
+}
+
+.mx-5{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.mx-10{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mx-15{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.mx-20{
+    margin-right: 20px;
+    margin-left: 20px;;
+}
+
+.mx-25{
+    margin-right: 25px;
+    margin-left: 25px;;
+}
+
+
+.my-5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-15{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.my-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.my-20{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mt-5{
+    margin-top: 5px;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-25{
+    margin-top: 25px;
+}
+
+.mb-5{
+    margin-top: 5px;
+}
+
+.mb-10{
+    margin-top: 10px;
+}
+
+.mb-15{
+    margin-top: 15px;
+}
+
+.mb-20{
+    margin-top: 20px;
+}
+
+.mb-25{
+    margin-top: 25px;
+}
+
+.ms-5{
+    margin-left: 5px;
+}
+
+.ms-10{
+    margin-left: 10px;
+}
+
+.ms-15{
+    margin-left: 15px;
+}
+
+.ms-20{
+    margin-left: 20px;
+}
+
+.ms-25{
+    margin-left: 25px;
+}
+
+.me-5{
+    margin-right: 5px !important;
+}
+
+.me-10{
+    margin-right: 10px !important;
+}
+
+.me-15{
+    margin-right: 15px !important;
+}
+
+.me-20{
+    margin-right: 20px !important;
+}
+
+.me-25{
+    margin-right: 25px !important;
+}
+
+.page_heading{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.content_padding{
+    padding: 0 15px; 
+}
+
+.w-100{
+    width: 100%;
+}
+
+.alert{
+    font-size: 11px;
+    font-weight: 400;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.alert .alert_icon {
+    border-radius: 100%;
+    margin-right: 12px;
+    height: 19px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: var(--color-white);
+}
+
+.alert-danger{
+    background-color: var(--light-red);
+    color: var(--red-color);
+}
+
+.alert-danger .alert_icon{
+    background-color: var(--red-color);
+    border: 1px solid var(--red-color);
+}
+
+.alert-warning{
+    background-color: var(--light-yellow);
+    color: var(--yellow-color);
+}
+
+.alert-warning .alert_icon{
+    background-color: var(--yellow-color);
+    border: 1px solid var(--yellow-color);
+}
+
+.alert-success{
+    background-color: var(--light-green);
+    color: var(--green-color);
+}
+
+.alert-success .alert_icon{
+    background-color: var(--green-color);
+    border: 1px solid var(--green-color);
+}
+
+.float-end{
+    float: right;
+}
+
+.float-start{
+    float: left;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.overflow-scroll{
+    overflow: scroll;
+}
+
+.shadow-none{
+    box-shadow: none;
+}
+
+.utilitypage{
+    padding: 20px 10px;
+}
+
+ion-col {
+    padding: 5px;
+}
+
+ion-card-content {
+    padding: 10px !important;
+}
+
+// form elements
+.form-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.control-label {
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    padding: 10px !important;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    border-radius: 3px;
+    border: 1px solid var(--input-border);
+    background-color: var(--color-white);
+}
+
+
+ion-input>input {
+    padding: 0 !important;
+}
+
+// flashscreen page
+.flashscreen{
+    padding: 30px;
+}
+
+.flashscreen .flash-logo{
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.flashscreen .flash-logo img {
+    border-radius: 100%;
+}
+
+.flashscreen .flash-logo span{
+    font-size: 43px;
+    font-weight: 600;
+    color: var(--text-gray);
+}
+
+.flashscreen .welcome-text{
+    margin-top: 100px;
+}
+
+.flashscreen .welcome-text h1{
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.flashscreen .welcome-text h1 span{
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.flashscreen .welcome-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+// log in page starts
+
+.login-page{
+    padding: 100px 30px 30px;
+}
+
+.login-page h1{
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.login-form{
+    margin-top: 80px;
+}
+
+.login-form ion-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+ion-item {
+    --padding-end: 0px;
+    --inner-padding-end: 0px;
+  }
+
+.login-form ion-input {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 10px 10px 10px 45px !important;
+    height: 53px;
+}
+
+
+.login-form .input-icon {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    height: 53px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form .input-icon i{
+    color: var(--color-black);
+}
+
+.login-form ion-checkbox {
+    background: #ffffff;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-radius: 5px;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    border-color: var(--text-gray) !important;
+    --checkmark-color: #4870f2;
+    --background-checked: #ffffff;
+    --border-color: #ffffff;
+    --border-color-checked: #ffffff;
+  }
+
+.login-form ion-label {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: var(--text-gray) !important;
+}
+
+.login-form .btn_forgot_password {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+.checkbox-icon{
+    height: 20px !important;
+    width: 20px !important;
+}
+
+
+// landing header
+.landing-header h1{
+    color: var(--text-gray);
+    font-weight: 600;
+}
+
+.landing-header h1 img {
+    margin-left: 5px;
+}
+
+.landing-header .btn-head-home {
+    padding: 8px;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+.landing-header .btn-head-home:first-child {
+    margin-right: 13px;
+}
+
+
+// all pages ion-header
+.page-header.header-md::after {
+    background: none;
+}
+
+.page-header ion-back-button{
+    color: var(--text-gray);
+}
+
+.page-header ion-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+
+// book roomm 
+.card-book-room{
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.accordion-book-room:not(.accordion-collapsed){
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.common-accordion.accordion-animated > [slot=header] .ion-accordion-toggle-icon {
+    display: none;
+}
+
+
+.touchspin-minus {
+    top: 34px;
+    left: 8px;
+    z-index: 999;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+.touchspin-minus .icon-minus i {
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 2px 3px;
+    color: var(--primary-color);
+}
+
+.touchspin-plus {
+    top: 34px;
+    right: 8px;
+    z-index: 999;
+    font-size: 20px;
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.input-touchspin {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    text-align: center;
+}
+
+.heading-bar {
+    padding: 14px 12px;
+    background: var(--secondary-color);
+}
+
+// tabs css
+.tab-segment ion-segment-button {
+    background-color: var(--secondary-color);
+    margin: 0 5px;
+    min-height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+
+.tab-segment .segment-button-checked {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    --indicator-color: var(--color-white);
+}
+
+// booking status page
+.accordion-booking-status:not(.accordion-collapsed){
+    border: 1px solid var(--secondary-color);
+}
+
+.accordion-booking-status{
+    border-radius: 2px 2px 0 0;
+}
+
+.accordion-booking-status .tables-section ion-col{
+    border-bottom: 1px dashed var(--secondary-color);
+}
+
+.accordion-booking-status .tables-section table {
+    line-height: 25px;
+}
+
+.accordion-booking-status .tables-section span {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.accordion-booking-status .tables-section strong {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.accordion-booking-status .action_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.upcoming_bookings h2 {
+    font-size: 18px;
+}
+
+
+// page-serarch-room
+.page-search-room .card-search-form{
+    margin-top: 35px;
+}
+
+.page-search-room .search_results{
+    padding-top: 40px;
+}
+
+.page-search-room .search_results h2{
+    font-size: 22px;
+}
+
+.bottom_fixed_section{
+    padding: 35px 50px;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.05);
+}
+
+// book-room-page
+.book-room-page {
+    padding: 30px 0;
+}
+
+.book-room-page h3{
+    font-weight: 400;
+}
+
+// page-booking-details
+.page-booking-details{
+    padding-top: 40px;
+}
+
+.page-booking-details .card-booking-details {
+    border: 1px solid var(--secondary-color);
+    border-radius: 0;
+    margin-top: 25px;
+}
+

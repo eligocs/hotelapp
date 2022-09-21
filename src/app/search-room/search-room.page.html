@@ -1,0 +1,83 @@
+<ion-content fullscreen="true" scroll-y="true">
+  <div class="page-search-room pt-30">
+    <ion-row class="landing-header ion-align-items-center px-10">
+      <ion-col size="9">
+        <h1>Hello, Deepak <img src="../../assets/images/icon-hand.svg" alt=""></h1>
+      </ion-col>
+
+      <ion-col size="3" class="ion-text-right p-0">
+        <div class="header-btns">
+          <button class="btn-secondary btn-head-home" ion-button full no-margin><i
+              class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn-secondary btn-head-home" ion-button full no-margin><i
+              class="fa-solid fa-bell"></i></button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- begin search-room form -->
+    <div class="content_padding">
+      <ion-card class="bg-secondary shadow-none card-search-form">
+        <ion-card-content>
+          <form>
+            <ion-row>
+              <ion-col size="12">
+                <div class="form-group">
+                  <ion-label class="control-label">Room Type</ion-label>
+                  <ion-select class="form-control" placeholder="Select Room Type">
+                    <ion-select-option value="one">one</ion-select-option>
+                    <ion-select-option value="two">two</ion-select-option>
+                    <ion-select-option value="three">three</ion-select-option>
+                  </ion-select>
+                </div>
+              </ion-col>
+
+              <ion-col size="12">
+                <div class="form-group">
+                  <ion-label class="control-label">No. of Rooms</ion-label>
+                  <ion-input class="form-control" type="name" placeholder="Enter No. of Rooms"></ion-input>
+                </div>
+              </ion-col>
+
+              <ion-col size="6">
+                <div class="form-group">
+                  <ion-label class="control-label">Check In</ion-label>
+                  <input class="form-control" type="date" name="checkin" placeholder="DD/MM/YY">
+                </div>
+              </ion-col>
+
+              <ion-col size="6">
+                <div class="form-group">
+                  <ion-label class="control-label">Check Out</ion-label>
+                  <input class="form-control" type="date" name="checkout" placeholder="DD/MM/YY">
+                </div>
+              </ion-col>
+
+              <ion-col size="12">
+                <button class="btn-large btn-primary" ion-button full no-margin>Search Room</button>
+              </ion-col>
+            </ion-row>
+          </form>
+        </ion-card-content>
+      </ion-card>
+      <!-- end search-room form -->
+
+      <!--serarch result -->
+      <ion-row class="search_results">
+        <ion-col size="12"> 
+          <h2 class="text-success fw_500">Available Rooms  <span>(2)</span></h2>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <!-- procced bookings -->
+    <ion-row class="bottom_fixed_section mt-20"> 
+      <ion-col size="12"> 
+        <button class="btn-large btn-primary fw_300" ion-button full no-margin>Proceed With Booking</button>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  
+</ion-content>
