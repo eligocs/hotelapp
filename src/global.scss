@@ -84,8 +84,16 @@ h4{
     color: var(--green-color);
 }
 
+.bg-danger{
+    background-color: var(--red-color);
+}
+
 .text-white{
-    color: var(--color-white);
+    color: var(--color-white) !important;
+}
+
+.text-gray{
+    color: var(--text-gray);
 }
 
 .text-danger{
@@ -302,6 +310,32 @@ button{
     padding-top: 30px !important;
 }
 
+// padding left short-hand
+.ps-5{
+    padding-left: 5px;
+}
+
+.ps-10{
+    padding-left: 10px;
+}
+
+.ps-15{
+    padding-left: 15px;
+}
+
+.ps-20{
+    padding-left: 20px;
+}
+
+.ps-25{
+    padding-left: 25px;
+}
+
+.ps-30{
+    padding-left: 30px;
+}
+
+
 
 // margins short-hands
 .m-0{
@@ -399,25 +433,6 @@ button{
     margin-top: 25px;
 }
 
-.mb-5{
-    margin-top: 5px;
-}
-
-.mb-10{
-    margin-top: 10px;
-}
-
-.mb-15{
-    margin-top: 15px;
-}
-
-.mb-20{
-    margin-top: 20px;
-}
-
-.mb-25{
-    margin-top: 25px;
-}
 
 .ms-5{
     margin-left: 5px;
@@ -908,8 +923,8 @@ ion-item {
 }
 
 .bottom_fixed_section{
-    padding: 35px 50px;
     box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.05);
+    padding: 10px 20px;
 }
 
 // book-room-page
@@ -932,3 +947,88 @@ ion-item {
     margin-top: 25px;
 }
 
+.card-booking-details table{
+    line-height: 25px;
+}
+
+.card-booking-details table span {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.card-booking-details table strong {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.card-booking-details ion-row ion-col{
+    border-bottom: 1px dashed var(--secondary-color);
+}
+
+.card-booking-details .table_price_breakout td{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-gray);
+    padding: 8px 5px;
+}
+
+.page-booking-details .control-label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.exclamation-danger {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--red-color);
+    margin-bottom: 14px;
+    margin-left: 25px;
+}
+
+.exclamation-danger span {
+    padding: 1px 7px;
+    background: var(--red-color);
+    border-radius: 100%;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.exclamation-danger span i{
+    color: var(--color-white);
+}
+
+// page-booking-cancelation
+.page-booking-cancelation{
+    padding-top: 40px;
+}
+
+.page-booking-cancelation .refund_details {
+    border: 1px dashed var(--secondary-color);
+    margin-top: 20px;
+}
+
+.page-booking-cancelation .refund_details .border_bottom_dashed{
+    border-bottom: 1px dashed var(--secondary-color);
+}
+
+.page-booking-cancelation .refund_details .flex-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 8px;
+}
+
+.page-booking-cancelation .refund_details .flex-box p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.page-booking-cancelation .btn_view_charges{
+    font-size: 14px;
+    color: var(--text-gray);
+    font-weight: 500;
+}

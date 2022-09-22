@@ -34,7 +34,11 @@ const routes: Routes = [
   {
     path: 'search-room',
     loadChildren: () => import('./search-room/search-room.module').then( m => m.SearchRoomPageModule)
+  },  {
+    path: 'booking-cancelation',
+    loadChildren: () => import('./booking-cancelation/booking-cancelation.module').then( m => m.BookingCancelationPageModule)
   },
+
 ];
 
 @NgModule({

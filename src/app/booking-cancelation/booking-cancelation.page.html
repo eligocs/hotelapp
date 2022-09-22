@@ -1,0 +1,49 @@
+<ion-header class="page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cancel Booking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" scroll-y="true">
+  <div class="page-booking-cancelation">
+    <div class="content_padding">
+      <h2 class="page_heading">Booking Id: <span>25468</span></h2>
+      <div class="refund_details">
+        <div class="border_bottom_dashed">
+          <div class="flex-box">
+            <p class="text-primary">Total Paid</p>
+            <p class="text-primary"><i class="fa-solid fa-indian-rupee-sign "></i> 12,200</p>
+          </div>
+        </div>
+
+        <div class="border_bottom_dashed">
+          <div class="flex-box">
+            <p class="text-danger">Deductions</p>
+            <p class="text-danger"><i class="fa-solid fa-indian-rupee-sign "></i> 6,200</p>
+          </div>
+        </div>
+
+        <div class="border_bottom_dashed">
+          <div class="flex-box bg-secondary">
+            <p class="text-success">Total Refund</p>
+            <p class="text-success"><i class="fa-solid fa-indian-rupee-sign "></i> 6,200</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <ion-label>Select Reason of cancel Booking</ion-label>
+        <ion-select class="form-control" placeholder="Select Filter">
+          <ion-select-option value="one">Guest cancel room booking </ion-select-option>
+          <ion-select-option value="two">Tour Canceled</ion-select-option>
+          <ion-select-option value="three">Room Not Available</ion-select-option>
+        </ion-select>
+        <a href="javascript: void()" class="btn_view_charges">See cancellation Charges</a>
+      </div>
+    </div>
+  </div>
+</ion-content>
