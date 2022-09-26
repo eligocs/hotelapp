@@ -64,20 +64,177 @@
 
       <!--serarch result -->
       <ion-row class="search_results">
-        <ion-col size="12"> 
-          <h2 class="text-success fw_500">Available Rooms  <span>(2)</span></h2>
+        <ion-col size="12">
+          <h2 class="text-success fw_500">Available Rooms <span>(2)</span></h2>
         </ion-col>
       </ion-row>
     </div>
 
     <!-- procced bookings -->
-    <ion-row class="bottom_fixed_section mt-20"> 
-      <ion-col size="12" class="px-25"> 
-        <button class="btn-large btn-primary fw_300" ion-button full no-margin>Proceed With Booking</button>
+    <ion-row class="bottom_fixed_section mt-20">
+      <ion-col size="12" class="px-25">
+        <button class="btn-large btn-primary fw_300" (click)="setOpen(true)" ion-button full no-margin>Proceed With
+          Booking</button>
       </ion-col>
     </ion-row>
 
-  </div>
-
+    <!-- proceed booking form modal -->
+    <ion-modal [isOpen]="isModalOpen" class="modal_book_room">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar class="px-15">
+            <h2 class="text-primary">Book Room</h2>
+            <ion-buttons slot="end">
+              <ion-button (click)="setOpen(false)" class="close_modal"><i class="fa-solid fa-xmark"></i></ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <div class="pt-25 booking_form">
+            <form action="">
+              <ion-accordion-group  [multiple]="true" [value]="['room1', 'room2']">
+                <ion-accordion class="accordion-book-room common-accordion mb-15" value="room1">
+                  <ion-item slot="header" color="light" class="accrodion-header">
+                    <ion-label class="text-primary">Deluxe Room 1</ion-label>
+                  </ion-item>
+                  <div class="p-10" slot="content">
+                    <ion-row>
+                      <ion-col size="12">
+                        <div class="form-group">
+                          <ion-label class="control-label">Guest Name</ion-label>
+                          <ion-input class="form-control" type="text" name="guestName" placeholder="Enter Guest Name">
+                          </ion-input>
+                        </div>
+                      </ion-col>
   
+                      <ion-col size="4">
+                        <div class="form-group">
+                          <ion-label class="control-label">Adults</ion-label>
+                          <button class="touchspin-minus position-absolute">
+                            <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                          </button>
+                          <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                          <button class="touchspin-plus position-absolute"><i
+                              class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                      </ion-col>
+  
+                      <ion-col size="4">
+                        <div class="form-group">
+                          <ion-label class="control-label">Childern (2.5+)</ion-label>
+                          <button class="touchspin-minus position-absolute">
+                            <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                          </button>
+                          <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                          <button class="touchspin-plus position-absolute"><i
+                              class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                      </ion-col>
+  
+                      <ion-col size="4">
+                        <div class="form-group">
+                          <ion-label class="control-label">Extra Matt</ion-label>
+                          <button class="touchspin-minus position-absolute">
+                            <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                          </button>
+                          <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                          <button class="touchspin-plus position-absolute"><i
+                              class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                      </ion-col>
+  
+                      <ion-col size="12">
+                        <div class="form-group">
+                          <ion-label class="control-label">Meal Plan</ion-label>
+                          <ion-select class="form-control" placeholder="Select Meal Plan">
+                            <ion-select-option value="one">MAP</ion-select-option>
+                            <ion-select-option value="two">CP</ion-select-option>
+                            <ion-select-option value="three">EP</ion-select-option>
+                          </ion-select>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </div>
+                </ion-accordion>
+  
+                <ion-accordion class="accordion-book-room common-accordion mb-15" value="room2">
+                  <ion-item slot="header" color="light" class="accrodion-header">
+                    <ion-label class="text-primary">Deluxe Room 2</ion-label>
+                  </ion-item>
+                  <div class="p-10" slot="content">
+                    <ion-row>
+                      <ion-col size="12">
+                        <div class="form-group">
+                          <ion-label class="control-label">Guest Name</ion-label>
+                          <ion-input class="form-control" type="text" name="guestName" placeholder="Enter Guest Name">
+                          </ion-input>
+                        </div>
+                      </ion-col>
+  
+                      <ion-col size="4">
+                        <div class="form-group">
+                          <ion-label class="control-label">Adults</ion-label>
+                          <button class="touchspin-minus position-absolute">
+                            <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                          </button>
+                          <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                          <button class="touchspin-plus position-absolute"><i
+                              class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                      </ion-col>
+  
+                      <ion-col size="4">
+                        <div class="form-group">
+                          <ion-label class="control-label">Childern (2.5+)</ion-label>
+                          <button class="touchspin-minus position-absolute">
+                            <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                          </button>
+                          <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                          <button class="touchspin-plus position-absolute"><i
+                              class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                      </ion-col>
+  
+                      <ion-col size="4">
+                        <div class="form-group">
+                          <ion-label class="control-label">Extra Matt</ion-label>
+                          <button class="touchspin-minus position-absolute">
+                            <span class="icon-minus"><i class="fa-solid fa-minus"></i></span>
+                          </button>
+                          <ion-input class="form-control input-touchspin" type="number" placeholder="12"></ion-input>
+                          <button class="touchspin-plus position-absolute"><i
+                              class="fa-solid fa-circle-plus"></i></button>
+                        </div>
+                      </ion-col>
+  
+                      <ion-col size="12">
+                        <div class="form-group">
+                          <ion-label class="control-label">Meal Plan</ion-label>
+                          <ion-select class="form-control" placeholder="Select Meal Plan">
+                            <ion-select-option value="one">MAP</ion-select-option>
+                            <ion-select-option value="two">CP</ion-select-option>
+                            <ion-select-option value="three">EP</ion-select-option>
+                          </ion-select>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </div>
+                </ion-accordion>
+              </ion-accordion-group>
+  
+              <!-- submit buttons -->
+              <ion-row>
+                <ion-col size="6">
+                  <button class="btn-large btn-secondary">Add To Cart</button>
+                </ion-col>
+                <ion-col size="6">
+                  <button class="btn-large btn-primary">Book Rooms</button>
+                </ion-col>
+              </ion-row>
+            </form>
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
 </ion-content>

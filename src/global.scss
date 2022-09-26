@@ -814,9 +814,13 @@ ion-item {
 
 
 
-// book roomm 
+// book roomm- modal
 .card-book-room{
     border-bottom: 1px solid var(--secondary-color);
+}
+
+.modal_book_room .booking_form{
+    padding-bottom: 80px;
 }
 
 .accordion-book-room:not(.accordion-collapsed){
@@ -826,7 +830,6 @@ ion-item {
 .common-accordion.accordion-animated > [slot=header] .ion-accordion-toggle-icon {
     display: none;
 }
-
 
 .touchspin-minus {
     top: 34px;
@@ -1090,23 +1093,15 @@ ion-item {
     border-color: var(--primary-color);
 }
 
- ion-modal.modalCancellationPolicy {
-    // min-height: 650px;
-    // width: 320px;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-}
 
-.modalCancellationPolicy .close_modal {
+.close_modal {
     height: 36px !important;
     width: 36px;
     background-color: var(--secondary-color);
     border-radius: 100%;
 }
 
-.modalCancellationPolicy .close_modal i {
+.close_modal i {
     font-size: 16px;
     color: var(--primary-color);
 }

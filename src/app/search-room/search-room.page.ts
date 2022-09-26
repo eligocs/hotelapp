@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchRoomPage implements OnInit {
 
+  // proceed booking from modal
+  isModalOpen = false;
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
+
   constructor() { }
 
   ngOnInit() {
