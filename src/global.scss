@@ -930,12 +930,18 @@ ion-item {
 
 
 // page-serarch-room
+.page-search-room{
+    padding-bottom: 100px;
+}
+
+
 .page-search-room .card-search-form{
     margin-top: 35px;
 }
 
 .page-search-room .search_results{
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .page-search-room .search_results h2{
