@@ -46,6 +46,10 @@ const routes: Routes = [
     path: 'mycart',
     loadChildren: () => import('./mycart/mycart.module').then( m => m.MycartPageModule)
   },
+  {
+    path: 'refund-list',
+    loadChildren: () => import('./refund-list/refund-list.module').then( m => m.RefundListPageModule)
+  },
 
 ];
 
