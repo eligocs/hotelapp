@@ -38,6 +38,14 @@ const routes: Routes = [
     path: 'booking-cancelation',
     loadChildren: () => import('./booking-cancelation/booking-cancelation.module').then( m => m.BookingCancelationPageModule)
   },
+  {
+    path: 'booking-status',
+    loadChildren: () => import('./booking-status/booking-status.module').then( m => m.BookingStatusPageModule)
+  },
+  {
+    path: 'mycart',
+    loadChildren: () => import('./mycart/mycart.module').then( m => m.MycartPageModule)
+  },
 
 ];
 

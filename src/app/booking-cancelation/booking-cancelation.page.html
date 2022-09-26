@@ -34,7 +34,6 @@
         </div>
 
       </div>
-
       <div class="form-group">
         <ion-label>Select Reason of cancel Booking</ion-label>
         <ion-select class="form-control" placeholder="Select Filter">
@@ -42,8 +41,44 @@
           <ion-select-option value="two">Tour Canceled</ion-select-option>
           <ion-select-option value="three">Room Not Available</ion-select-option>
         </ion-select>
-        <a href="javascript: void()" class="btn_view_charges">See cancellation Charges</a>
+
+        <a (click)="setOpen(true)" class="btn_view_charges">See cancellation Charges</a>
+        <!-- cancellation policy modal -->
+        <ion-modal [isOpen]="isModalOpen" class="modalCancellationPolicy">
+          <ng-template>
+            <ion-toolbar>
+              <ion-buttons slot="end">
+                <ion-button (click)="setOpen(false)" class="close_modal"><i class="fa-solid fa-xmark"></i></ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+            <ion-content class="ion-padding">
+              <div class="ion-text-center">
+                <img src="../../assets/images/wallet.png" alt="Wallet Icon">
+                <h2 class="page_heading mt-15">Cancellation Charges</h2>
+              </div>
+              <div class="modal-content">
+                <ul>
+                  <li>Hotel accepted cancellation and refunded full amount before 30 days</li>
+                  <li>Hotel accepted cancellation and refunded partial amount before 30 days</li>
+                  <li>Hotel accepted cancellation and refunded 10% amount before 10 days</li>
+                  <li>Hotel accepted cancellation and refunded lost amount before 5 days</li>
+                </ul>
+              </div>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+
       </div>
     </div>
+    
+  
+    <ion-row class="bottom_fixed_section mt-20"> 
+      <ion-col size="12"> 
+        <p class="exclamation exclamation-success ion-text-center ms-0">
+          <span><i class="fa-solid fa-exclamation"></i></span> Your booking is under partially refundable 
+        </p>
+        <button class="btn-large btn-primary" (click)="confirmBooking()" ion-button full no-margin>Confirm Cancellation</button>
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>

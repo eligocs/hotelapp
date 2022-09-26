@@ -1,0 +1,38 @@
+<ion-header class="page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" scroll-y="true"> 
+  <div class="page-myCart">
+    <div class="content_padding">
+      <!-- cart-item -->
+      <div class="cart_item">
+        <div class="item_image">
+          <img src="../../assets/images/hotelimg1.png" alt="">
+        </div>
+        <div class="item_details">
+          
+        </div>
+      </div>
+    </div>
+
+
+    <ion-row class="bottom_fixed_section mt-20"> 
+      <ion-col size="12"> 
+        <div class="form-group d-flex ion-align-items-center">
+          <ion-checkbox color="primary"></ion-checkbox>
+          <ion-label class="control-label">Pay with wallet</ion-label>
+        </div>
+        <p class="exclamation exclamation-danger">
+          <span><i class="fa-solid fa-exclamation"></i></span> Pending Payment need to pay
+        </p>
+        <button class="btn-large btn-primary" ion-button full no-margin>Proceed To Payment</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

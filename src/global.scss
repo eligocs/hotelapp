@@ -51,6 +51,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+
 h1{
     font-size: 26px;
 }
@@ -170,6 +176,10 @@ button{
 
 .ion-color-light {
     --ion-color-shade: var(--secondary-color) !important;
+}
+
+.border{
+    border: 1px solid var(--secondary-color);
 }
 
 
@@ -433,6 +443,9 @@ button{
     margin-top: 25px;
 }
 
+.ms-0{
+    margin-left: 0 !important;
+}
 
 .ms-5{
     margin-left: 5px;
@@ -850,7 +863,12 @@ ion-item {
     background: var(--secondary-color);
 }
 
-// tabs css
+
+// booking status page
+.page-booking-status .tab-segment{
+    margin-top: 40px;
+}
+
 .tab-segment ion-segment-button {
     background-color: var(--secondary-color);
     margin: 0 5px;
@@ -862,20 +880,19 @@ ion-item {
     text-transform: capitalize;
 }
 
-
 .tab-segment .segment-button-checked {
     background-color: var(--primary-color);
     color: var(--color-white);
     --indicator-color: var(--color-white);
 }
 
-// booking status page
 .accordion-booking-status:not(.accordion-collapsed){
     border: 1px solid var(--secondary-color);
 }
 
 .accordion-booking-status{
     border-radius: 2px 2px 0 0;
+    margin-bottom: 15px;
 }
 
 .accordion-booking-status .tables-section ion-col{
@@ -924,7 +941,17 @@ ion-item {
 
 .bottom_fixed_section{
     box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.05);
-    padding: 10px 20px;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom_fixed_section .control-label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 15px;
 }
 
 // book-room-page
@@ -974,32 +1001,46 @@ ion-item {
     padding: 8px 5px;
 }
 
-.page-booking-details .control-label {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-left: 15px;
-}
 
-.exclamation-danger {
+.exclamation{
     font-size: 12px;
     font-weight: 500;
-    color: var(--red-color);
     margin-bottom: 14px;
     margin-left: 25px;
 }
 
-.exclamation-danger span {
+.exclamation span{
     padding: 1px 7px;
-    background: var(--red-color);
     border-radius: 100%;
     font-size: 10px;
     margin-right: 5px;
 }
 
+.exclamation-danger {
+    color: var(--red-color);
+}
+
+.exclamation-danger span {
+    background: var(--red-color);
+}
+
 .exclamation-danger span i{
     color: var(--color-white);
 }
+
+.exclamation-success {
+    color: var(--green-color);
+}
+
+.exclamation-success span {
+    background: var(--green-color);
+    border-radius: 100%;
+}
+
+.exclamation-success span i{
+    color: var(--color-white);
+}
+
 
 // page-booking-cancelation
 .page-booking-cancelation{
@@ -1009,6 +1050,7 @@ ion-item {
 .page-booking-cancelation .refund_details {
     border: 1px dashed var(--secondary-color);
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .page-booking-cancelation .refund_details .border_bottom_dashed{
@@ -1031,4 +1073,67 @@ ion-item {
     font-size: 14px;
     color: var(--text-gray);
     font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.page-booking-cancelation ion-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.page-booking-cancelation .form-control {
+    border-color: var(--primary-color);
+}
+
+ ion-modal.modalCancellationPolicy {
+    // min-height: 650px;
+    // width: 320px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+}
+
+.modalCancellationPolicy .close_modal {
+    height: 36px !important;
+    width: 36px;
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+}
+
+.modalCancellationPolicy .close_modal i {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.modalCancellationPolicy  .modal-content {
+    margin-top: 30px;
+}
+
+.modalCancellationPolicy .modal-content ul {
+    padding-left: 30px;
+}
+
+.modalCancellationPolicy .modal-content ul li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--primary-color);
+    list-style: square;
+    margin-bottom: 20px;
+}
+
+// cart page css
+.page-myCart{
+    padding-top: 30px;
+}
+
+.page-myCart .cart_item {
+    border-radius: 2px;
+    margin-bottom: 18px;
 }
