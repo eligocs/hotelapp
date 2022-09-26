@@ -7,30 +7,115 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true" scroll-y="true"> 
+<ion-content fullscreen="true" scroll-y="true">
   <div class="page-myCart">
     <div class="content_padding">
       <!-- cart-item -->
-      <div class="cart_item">
+      <div class="cart_item d-flex">
         <div class="item_image">
           <img src="../../assets/images/hotelimg1.png" alt="">
         </div>
         <div class="item_details">
-          
+          <div class="d-flex ion-justify-content-between">
+            <h3 class="text-primary fw_400">Deluxe</h3>
+            <h3 class="text-primary ion-text-right fw_400"><i class="fa-solid fa-indian-rupee-sign"></i> 11,000
+              <span class="text-gray fw_300 d-block">per/night</span>
+            </h3>
+          </div>
+          <!-- guest name -->
+          <h4 class="text-primary fw_400">Name: Vijay Sharma</h4>
+          <div class="d-flex mt-10 mb-5">
+            <p class="text-gray fw_300">Extra Matteres: <span class="text-primary fw_400">1</span></p>
+            <p class="text-gray fw_300 ms-20">Meal Plan:
+              <span class="text-primary fw_400">MAP </span>
+              <i class="fa-solid fa-circle text-danger"></i>
+            </p>
+          </div>
+          <p class="text-gray fw_300">6-Sep To 7-Sep: <span class="text-primary fw_400">1 Night</span></p>
         </div>
       </div>
+
+      <!-- cart-item -->
+      <div class="cart_item d-flex">
+        <div class="item_image">
+          <img src="../../assets/images/hotelimg2.png" alt="">
+        </div>
+        <div class="item_details">
+          <div class="d-flex ion-justify-content-between">
+            <h3 class="text-primary fw_400">Deluxe</h3>
+            <h3 class="text-primary ion-text-right fw_400"><i class="fa-solid fa-indian-rupee-sign"></i> 13,000
+              <span class="text-gray fw_300 d-block">per/night</span>
+            </h3>
+          </div>
+          <!-- guest name -->
+          <h4 class="text-primary fw_400">Name: Kapil Sharma</h4>
+          <div class="d-flex mt-10 mb-5">
+            <p class="text-gray fw_300">Extra Matteres: <span class="text-primary fw_400">4</span></p>
+            <p class="text-gray fw_300 ms-20">Meal Plan:
+              <span class="text-primary fw_400">MAP </span>
+              <i class="fa-solid fa-circle text-success"></i>
+            </p>
+          </div>
+          <p class="text-gray fw_300">6-Feb To 10-Sep: <span class="text-primary fw_400">5 Nights</span></p>
+        </div>
+      </div>
+
+      <!-- cart-item -->
+      <div class="cart_item d-flex">
+        <div class="item_image">
+          <img src="../../assets/images/hotelimg3.png" alt="">
+        </div>
+        <div class="item_details">
+          <div class="d-flex ion-justify-content-between">
+            <h3 class="text-primary fw_400">Deluxe</h3>
+            <h3 class="text-primary ion-text-right fw_400"><i class="fa-solid fa-indian-rupee-sign"></i> 13,000
+              <span class="text-gray fw_300 d-block">per/night</span>
+            </h3>
+          </div>
+          <!-- guest name -->
+          <h4 class="text-primary fw_400">Name: Mritunjay Chaurasia</h4>
+          <div class="d-flex mt-10 mb-5">
+            <p class="text-gray fw_300">Extra Matteres: <span class="text-primary fw_400">0</span></p>
+            <p class="text-gray fw_300 ms-20">Meal Plan:
+              <span class="text-primary fw_400">MAP </span>
+              <i class="fa-solid fa-circle text-danger"></i>
+            </p>
+          </div>
+          <p class="text-gray fw_300">01 Dec To 06-Dec: <span class="text-primary fw_400">6 Nights</span></p>
+        </div>
+      </div>
+
+      <!-- table_cart_total -->
+      <table class="w-100 table_cart_total">
+        <tbody>
+          <tr>
+            <td class="text-gray">Total Amount</td>
+            <td class="ion-text-right"><i class="fa-solid fa-indian-rupee-sign"></i> 40,000</td>
+          </tr>
+
+          <tr>
+            <td>GST 5%</td>
+            <td class="ion-text-right"><i class="fa-solid fa-indian-rupee-sign"></i> 1,200</td>
+          </tr>
+
+          <tr>
+            <td><strong>Grand Total</strong></td>
+            <td class="ion-text-right"><i class="fa-solid fa-indian-rupee-sign"></i> <strong>25,200</strong></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <ion-row class="bottom_fixed_section mt-20"> 
-      <ion-col size="12"> 
+    <ion-row class="bottom_fixed_section mt-20">
+      <ion-col size="12">
         <div class="form-group d-flex ion-align-items-center">
           <ion-checkbox color="primary"></ion-checkbox>
           <ion-label class="control-label">Pay with wallet</ion-label>
         </div>
-        <p class="exclamation exclamation-danger">
-          <span><i class="fa-solid fa-exclamation"></i></span> Pending Payment need to pay
+        <p class="exclamation exclamation-danger fw_300">
+          Minimum 50% amount need for Booking!
         </p>
-        <button class="btn-large btn-primary" ion-button full no-margin>Proceed To Payment</button>
+        <button class="btn-large btn-primary" (click)="proceedbooking()" ion-button full no-margin>Proceed To Payment</button>
       </ion-col>
     </ion-row>
   </div>
