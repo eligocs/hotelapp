@@ -13,6 +13,7 @@
   },
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",
     "@angular/forms": "^14.0.0",
@@ -26,7 +27,9 @@
     "@capacitor/status-bar": "4.0.1",
     "@ionic/angular": "^6.1.9",
     "ionicons": "^6.0.3",
+    "jquery": "^3.6.1",
     "rxjs": "~6.6.0",
+    "save": "^2.9.0",
     "sweetalert2": "^11.4.33",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

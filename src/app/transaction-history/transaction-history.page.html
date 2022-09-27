@@ -3,12 +3,12 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="agent-profile"></ion-back-button>
     </ion-buttons>
-    <ion-title>Refund</ion-title>
+    <ion-title>Transaction History</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen="true" scroll-y="true">
-  <div class="page-allrefunds">
+  <div class="page-transactions">
     <div class="content_padding">
       <!-- bookings filter form -->
       <div class="form">
@@ -37,45 +37,57 @@
         </ion-row>
       </div>
 
-      <!-- refund-list -->
-      <ul class="refund-list mt-25">
+      <h2 class="page_heading mb-20 mt-25">Transaction(10 done)</h2>
+      <ul class="transactions-list">
         <li>
-          <button class="btn-list bg-secondary" [routerLink]="['/booking-cancelation']">
+          <button class="btn-list bg-secondary" [routerLink]="['/transaction-details']">
             <h4>
-              Ticket ID : 12305
-              <span> <i class="fa-solid fa-indian-rupee-sign"></i> 6,200 </span>
+              Booking ID: 25473
+              <span>Payment Mode: UPI</span>
             </h4>
-            <span class="badge badge-warning">Under Process</span>
+            <p>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 5,500
+              <span class="text-success">success</span>
+            </p>
           </button>
         </li>
 
         <li>
-          <button class="btn-list" [routerLink]="['/booking-cancelation']">
+          <button class="btn-list" [routerLink]="['/transaction-details']">
             <h4>
-              Ticket ID : 12305
-              <span> <i class="fa-solid fa-indian-rupee-sign"></i> 3,000 </span>
+              Booking ID: 7548
+              <span>Payment Mode: Neft</span>
             </h4>
-            <span class="badge badge-success">Refund</span>
+            <p>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 4,457
+              <span class="text-danger">Failed</span>
+            </p>
           </button>
         </li>
 
         <li>
-          <button class="btn-list" [routerLink]="['/booking-cancelation']">
+          <button class="btn-list bg-secondary" [routerLink]="['/transaction-details']">
             <h4>
-              Ticket ID : 12305
-              <span> <i class="fa-solid fa-indian-rupee-sign"></i> 0 </span>
+              Booking ID: 7548
+              <span>Payment Mode: Cash</span>
             </h4>
-            <span class="badge badge-danger">Canceled</span>
+            <p>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 6,500
+              <span class="text-danger">Failed</span>
+            </p>
           </button>
         </li>
 
         <li>
-          <button class="btn-list bg-secondary" [routerLink]="['/booking-cancelation']">
+          <button class="btn-list" [routerLink]="['/transaction-details']">
             <h4>
-              Ticket ID : 12305
-              <span> <i class="fa-solid fa-indian-rupee-sign"></i> 1,200 </span>
+              Booking ID: 7548
+              <span>Payment Mode: Bank Transfer</span>
             </h4>
-            <span class="badge badge-warning">Under Process</span>
+            <p>
+              <i class="fa-solid fa-indian-rupee-sign"></i> 4,000
+              <span class="text-success">Success</span>
+            </p>
           </button>
         </li>
       </ul>

@@ -1,0 +1,42 @@
+<ion-header class="page-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agent Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" scroll-y="true">
+  <div class="page-agentProfile">
+    <div class="content_padding">
+      <div class="profile_options">
+
+        <div class="setting_link">
+          <button [routerLink]="['/general-setting']">General Settings</button>
+        </div>
+        
+        <div class="setting_link">
+          <button [routerLink]="['/transaction-history']">Transaction History</button>
+        </div> 
+        
+        <div class="setting_link">
+          <button [routerLink]="['/wallet']">Wallet</button>
+        </div> 
+        
+        <div class="setting_link">
+          <button [routerLink]="['/refund-list']">Refund Amount</button>
+        </div>
+
+        <div class="setting_link">
+          <button>Help Center</button>
+        </div>
+        
+        <div class="setting_link">
+          <button (click)="lgooutAlert()">Logout</button>
+        </div> 
+
+      </div>
+    </div>
+  </div>
+</ion-content>

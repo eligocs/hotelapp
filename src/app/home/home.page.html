@@ -1,20 +1,75 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" scroll-y="true">
+  <div class="dashboard">
+    <ion-row class="landing-header ion-align-items-center px-15">
+      <ion-col size="9">
+        <h1>Hello, Deepak <img src="../../assets/images/icon-hand.svg" alt=""></h1>
+      </ion-col>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <ion-col size="3" class="ion-text-right p-0">
+        <div class="header-btns">
+          <button class="btn-secondary btn-head-home" ion-button full no-margin><i
+              class="fa-solid fa-cart-shopping"></i></button>
+          <button class="btn-secondary btn-head-home" ion-button full no-margin><i
+              class="fa-solid fa-bell"></i></button>
+        </div>
+      </ion-col>
+    </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="content_padding">
+      <!-- booking_section -->
+      <div class="booking_section">
+        <div class="d-flex ion-justify-content-between mb-20">
+          <h4 class="text-gray">Room Booking Status</h4>
+          <ion-select class="" placeholder="Today">
+            <ion-select-option value="one">Today</ion-select-option>
+            <ion-select-option value="two">Upcoming</ion-select-option>
+            <ion-select-option value="three">Past</ion-select-option>
+          </ion-select>
+        </div>
+
+        <!-- booking status cards -->
+        <div class="dashboard_cards card_bookings">
+          <h5>Total Room Book</h5>
+          <p class="ion-text-center"><strong>4</strong></p>
+        </div>
+
+        <div class="dashboard_cards card_bookings">
+          <h5>Rooms Booking Approved</h5>
+          <p class="ion-text-center"><strong>2</strong></p>
+        </div>
+
+        <div class="dashboard_cards card_bookings">
+          <h5>Rooms Booking Pending</h5>
+          <p class="ion-text-center"><strong>2</strong></p>
+        </div>
+      </div>
+
+      <!-- card_payments -->
+      <div class="payments_section">
+        <div class="d-flex ion-justify-content-between mb-20">
+          <h4 class="text-gray">Payment Status</h4>
+          <ion-select class="" placeholder="Today">
+            <ion-select-option value="one">Today</ion-select-option>
+            <ion-select-option value="two">Upcoming</ion-select-option>
+            <ion-select-option value="three">Past</ion-select-option>
+          </ion-select>
+        </div>
+
+        <!-- payment status cards -->
+        <div class="dashboard_cards card_payments">
+          <h5>Pending Amount</h5>
+          <p class="ion-text-center"><strong><i class="fa-solid fa-indian-rupee-sign"></i> 50,000</strong></p>
+        </div>
+        <!-- custom accordion -->
+        <div class="acc">
+        <div class="accordion">
+          <div class="acc_title">Accordion</div>
+          <div class="accordion_body bg-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate voluptate voluptatibus voluptatum commodi odit ut laudantium dolore modi iusto?
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>

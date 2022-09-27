@@ -26,7 +26,7 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
-:root{
+:root {
     --primary-color: #091E3D;
     --secondary-color: #EEF1F5;
     --text-gray: #505050;
@@ -44,116 +44,143 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
 
-*:not(ion-icon, i){
+*:not(ion-icon, i) {
     font-family: "Poppins", sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fff;
     color: var(--primary-color);
 }
 
 
-h1{
+h1 {
     font-size: 26px;
 }
 
-h2{
+h2 {
     font-size: 18px;
 }
 
-h3{
+h3 {
     font-size: 16px;
 }
 
-h4{
+h4 {
     font-size: 14px;
 }
 
 // utility css
-.gap{
+.gap {
     margin: 20px 0;
 }
 
-.text-primary{
+.text-primary {
     color: var(--primary-color) !important;
 }
 
-.bg-secondary{
+.bg-secondary {
     background-color: var(--secondary-color) !important;
 }
 
-.text-success{
-    color: var(--green-color) !important;
-}
-
-.bg-danger{
+.bg-danger {
     background-color: var(--red-color) !important;
 }
 
-.text-white{
+.bg-warning {
+    background-color: var(--yellow-color) !important;
+}
+
+.badge {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--color-white);
+    padding: 8px;
+    min-width: 101px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.badge-warning {
+    background-color: var(--yellow-color) !important;
+}
+
+.badge-danger {
+    background-color: var(--red-color) !important;
+}
+
+.badge-success {
+    background-color: var(--green-color) !important;
+}
+
+
+.text-success {
+    color: var(--green-color) !important;
+}
+
+.text-white {
     color: var(--color-white) !important;
 }
 
-.text-gray{
+.text-gray {
     color: var(--text-gray) !important;
 }
 
-.text-danger{
+.text-danger {
     color: var(--red-color) !important;
 }
 
-.text-warning{
+.text-warning {
     color: var(--yellow-color) !important;
 }
 
-.fw_300{
+.fw_300 {
     font-weight: 300 !important;
 }
 
-.fw_400{
+.fw_400 {
     font-weight: 400 !important;
 }
 
-.fw_500{
+.fw_500 {
     font-weight: 500 !important;
 }
 
-.fw_600{
+.fw_600 {
     font-weight: 600 !important;
 }
 
-.fw_800{
+.fw_800 {
     font-weight: 800 !important;
 }
 
-.font_900{
+.font_900 {
     font-weight: 900 !important;
 }
 
-button{
+button {
     background-color: transparent;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--primary-color);
     color: var(--color-white);
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
-.btn-success{
+.btn-success {
     background-color: var(--green-color);
     color: var(--color-white);
 }
 
-.btn-danger{
+.btn-danger {
     background-color: var(--red-color);
     color: var(--color-white);
 }
@@ -174,334 +201,341 @@ button{
     border-radius: 2px;
 }
 
+ion-anchor {
+    display: inline-block;
+    text-align: center;
+}
+
 .ion-color-light {
     --ion-color-shade: var(--secondary-color) !important;
 }
 
-.border{
+.border {
     border: 1px solid var(--secondary-color);
 }
 
 
 // padding short-hand
-.p-0{
+.p-0 {
     padding: 0 !important;
 }
 
-.p-5{
+.p-5 {
     padding: 5px;
 }
 
-.p-10{
+.p-10 {
     padding: 10px;
 }
 
-.p-15{
+.p-15 {
     padding: 15px;
 }
 
-.p-20{
+.p-20 {
     padding: 20px;
 }
 
-.p-25{
+.p-25 {
     padding: 25px;
 }
 
-.px-0{
+.px-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-.px-5{
+.px-5 {
     padding-right: 5px;
     padding-left: 5px;
 }
 
-.px-10{
+.px-10 {
     padding-right: 10px;
     padding-left: 10px;
 }
 
-.px-15{
+.px-15 {
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.px-20{
+.px-20 {
     padding-right: 20px;
     padding-left: 20px;
 }
 
-.px-25{
+.px-25 {
     padding-right: 25px;
     padding-left: 25px;
 }
 
-.py-0{
+.py-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 
-.py-5{
+.py-5 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.py-10{
+.py-10 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.py-15{
+.py-15 {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.py-20{
+.py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.py-25{
+.py-25 {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.pb-0{
+.pb-0 {
     padding-bottom: 0 !important;
 }
 
-.pb-5{
+.pb-5 {
     padding-bottom: 5px !important;
 }
 
-.pb-10{
+.pb-10 {
     padding-bottom: 10px !important;
 }
 
-.pb-15{
+.pb-15 {
     padding-bottom: 15px !important;
 }
 
-.pb-20{
+.pb-20 {
     padding-bottom: 20px !important;
 }
 
-.pb-25{
+.pb-25 {
     padding-bottom: 25px !important;
 }
 
-.pt-0{
+.pt-0 {
     padding-top: 0 !important;
 }
 
-.pt-5{
+.pt-5 {
     padding-top: 5px !important;
 }
 
-.pt-10{
+.pt-10 {
     padding-top: 10px !important;
 }
 
-.pt-15{
+.pt-15 {
     padding-top: 15px !important;
 }
 
-.pt-20{
+.pt-20 {
     padding-top: 20px !important;
 }
 
-.pt-25{
+.pt-25 {
     padding-top: 25px !important;
 }
 
-.pt-30{
+.pt-30 {
     padding-top: 30px !important;
 }
 
 // padding left short-hand
-.ps-5{
+.ps-5 {
     padding-left: 5px;
 }
 
-.ps-10{
+.ps-10 {
     padding-left: 10px;
 }
 
-.ps-15{
+.ps-15 {
     padding-left: 15px;
 }
 
-.ps-20{
+.ps-20 {
     padding-left: 20px;
 }
 
-.ps-25{
+.ps-25 {
     padding-left: 25px;
 }
 
-.ps-30{
+.ps-30 {
     padding-left: 30px;
 }
 
 
 
 // margins short-hands
-.m-0{
+.m-0 {
     margin: 0;
 }
 
-.mb-5{
+.mb-5 {
     margin-bottom: 5px;
 }
 
-.mb-10{
+.mb-10 {
     margin-bottom: 10px;
 }
 
-.mb-15{
+.mb-15 {
     margin-bottom: 15px;
 }
 
-.mb-20{
+.mb-20 {
     margin-bottom: 20px;
 }
 
-.mb-25{
+.mb-25 {
     margin-bottom: 25px;
 }
 
-.mx-5{
+.mx-5 {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-.mx-10{
+.mx-10 {
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.mx-15{
+.mx-15 {
     margin-right: 15px;
     margin-left: 15px;
 }
 
-.mx-20{
+.mx-20 {
     margin-right: 20px;
-    margin-left: 20px;;
+    margin-left: 20px;
+    ;
 }
 
-.mx-25{
+.mx-25 {
     margin-right: 25px;
-    margin-left: 25px;;
+    margin-left: 25px;
+    ;
 }
 
 
-.my-5{
+.my-5 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.my-10{
+.my-10 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.my-15{
+.my-15 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.my-20{
+.my-20 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.my-20{
+.my-20 {
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-.mt-5{
+.mt-5 {
     margin-top: 5px;
 }
 
-.mt-10{
+.mt-10 {
     margin-top: 10px;
 }
 
-.mt-15{
+.mt-15 {
     margin-top: 15px;
 }
 
-.mt-20{
+.mt-20 {
     margin-top: 20px;
 }
 
-.mt-25{
+.mt-25 {
     margin-top: 25px;
 }
 
-.ms-0{
+.ms-0 {
     margin-left: 0 !important;
 }
 
-.ms-5{
+.ms-5 {
     margin-left: 5px;
 }
 
-.ms-10{
+.ms-10 {
     margin-left: 10px;
 }
 
-.ms-15{
+.ms-15 {
     margin-left: 15px;
 }
 
-.ms-20{
+.ms-20 {
     margin-left: 20px;
 }
 
-.ms-25{
+.ms-25 {
     margin-left: 25px;
 }
 
-.me-5{
+.me-5 {
     margin-right: 5px !important;
 }
 
-.me-10{
+.me-10 {
     margin-right: 10px !important;
 }
 
-.me-15{
+.me-15 {
     margin-right: 15px !important;
 }
 
-.me-20{
+.me-20 {
     margin-right: 20px !important;
 }
 
-.me-25{
+.me-25 {
     margin-right: 25px !important;
 }
 
-.page_heading{
+.page_heading {
     font-size: 18px;
     font-weight: 400;
     color: var(--primary-color);
 }
 
-.content_padding{
-    padding: 0 15px; 
+.content_padding {
+    padding: 0 15px;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.alert{
+.alert {
     font-size: 11px;
     font-weight: 400;
     padding: 6px 10px;
@@ -522,81 +556,81 @@ button{
     color: var(--color-white);
 }
 
-.alert-danger{
+.alert-danger {
     background-color: var(--light-red);
     color: var(--red-color);
 }
 
-.alert-danger .alert_icon{
+.alert-danger .alert_icon {
     background-color: var(--red-color);
     border: 1px solid var(--red-color);
 }
 
-.alert-warning{
+.alert-warning {
     background-color: var(--light-yellow);
     color: var(--yellow-color);
 }
 
-.alert-warning .alert_icon{
+.alert-warning .alert_icon {
     background-color: var(--yellow-color);
     border: 1px solid var(--yellow-color);
 }
 
-.alert-success{
+.alert-success {
     background-color: var(--light-green);
     color: var(--green-color);
 }
 
-.alert-success .alert_icon{
+.alert-success .alert_icon {
     background-color: var(--green-color);
     border: 1px solid var(--green-color);
 }
 
-.float-end{
+.float-end {
     float: right;
 }
 
-.float-start{
+.float-start {
     float: left;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
 }
 
-.position-relative{
+.position-relative {
     position: relative;
 }
 
-.position-absolute{
+.position-absolute {
     position: absolute;
 }
 
-.d-block{
+.d-block {
     display: block;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.flex-direction-column{
+.flex-direction-column {
     flex-direction: column;
 }
 
-.flex-direction-row{
+.flex-direction-row {
     flex-direction: row;
 }
 
-.overflow-scroll{
+.overflow-scroll {
     overflow: scroll;
 }
 
-.shadow-none{
+.shadow-none {
     box-shadow: none;
 }
 
-.utilitypage{
+.utilitypage {
     padding: 20px 10px;
 }
 
@@ -640,11 +674,11 @@ ion-input>input {
 }
 
 // flashscreen page
-.flashscreen{
+.flashscreen {
     padding: 30px;
 }
 
-.flashscreen .flash-logo{
+.flashscreen .flash-logo {
     height: 120px;
     width: 120px;
     margin: 0 auto;
@@ -660,30 +694,30 @@ ion-input>input {
     border-radius: 100%;
 }
 
-.flashscreen .flash-logo span{
+.flashscreen .flash-logo span {
     font-size: 43px;
     font-weight: 600;
     color: var(--text-gray);
 }
 
-.flashscreen .welcome-text{
+.flashscreen .welcome-text {
     margin-top: 100px;
 }
 
-.flashscreen .welcome-text h1{
+.flashscreen .welcome-text h1 {
     font-size: 42px;
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 10px;
 }
 
-.flashscreen .welcome-text h1 span{
+.flashscreen .welcome-text h1 span {
     font-weight: 400;
     display: block;
     margin-bottom: 5px;
 }
 
-.flashscreen .welcome-text p{
+.flashscreen .welcome-text p {
     font-size: 16px;
     font-weight: 400;
     color: var(--text-gray);
@@ -691,22 +725,22 @@ ion-input>input {
 
 // log in page starts
 
-.login-page{
+.login-page {
     padding: 100px 30px 30px;
 }
 
-.login-page h1{
+.login-page h1 {
     font-size: 42px;
     font-weight: 500;
     text-align: center;
     color: var(--primary-color);
 }
 
-.login-form{
+.login-form {
     margin-top: 80px;
 }
 
-.login-form ion-item{
+.login-form ion-item {
     position: relative;
     margin-bottom: 20px;
 }
@@ -714,7 +748,7 @@ ion-input>input {
 ion-item {
     --padding-end: 0px;
     --inner-padding-end: 0px;
-  }
+}
 
 .login-form ion-input {
     background-color: var(--secondary-color);
@@ -735,7 +769,7 @@ ion-item {
     justify-content: center;
 }
 
-.login-form .input-icon i{
+.login-form .input-icon i {
     color: var(--color-black);
 }
 
@@ -752,7 +786,7 @@ ion-item {
     --background-checked: #ffffff;
     --border-color: #ffffff;
     --border-color-checked: #ffffff;
-  }
+}
 
 .login-form ion-label {
     font-size: 14px !important;
@@ -769,14 +803,14 @@ ion-item {
     display: inline-block;
 }
 
-.checkbox-icon{
+.checkbox-icon {
     height: 20px !important;
     width: 20px !important;
 }
 
 
 // landing header
-.landing-header h1{
+.landing-header h1 {
     color: var(--text-gray);
     font-weight: 600;
 }
@@ -801,7 +835,7 @@ ion-item {
     background: none;
 }
 
-.page-header ion-back-button{
+.page-header ion-back-button {
     color: var(--text-gray);
 }
 
@@ -810,24 +844,28 @@ ion-item {
     font-weight: 400;
     color: var(--primary-color);
     text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-40%);
 }
 
 
 
 // book roomm- modal
-.card-book-room{
+.card-book-room {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.modal_book_room .booking_form{
+.modal_book_room .booking_form {
     padding-bottom: 80px;
 }
 
-.accordion-book-room:not(.accordion-collapsed){
+.accordion-book-room:not(.accordion-collapsed) {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.common-accordion.accordion-animated > [slot=header] .ion-accordion-toggle-icon {
+.common-accordion.accordion-animated>[slot=header] .ion-accordion-toggle-icon {
     display: none;
 }
 
@@ -868,7 +906,7 @@ ion-item {
 
 
 // booking status page
-.page-booking-status .tab-segment{
+.page-booking-status .tab-segment {
     margin-top: 40px;
 }
 
@@ -889,16 +927,16 @@ ion-item {
     --indicator-color: var(--color-white);
 }
 
-.accordion-booking-status:not(.accordion-collapsed){
+.accordion-booking-status:not(.accordion-collapsed) {
     border: 1px solid var(--secondary-color);
 }
 
-.accordion-booking-status{
+.accordion-booking-status {
     border-radius: 2px 2px 0 0;
     margin-bottom: 15px;
 }
 
-.accordion-booking-status .tables-section ion-col{
+.accordion-booking-status .tables-section ion-col {
     border-bottom: 1px dashed var(--secondary-color);
 }
 
@@ -930,25 +968,25 @@ ion-item {
 
 
 // page-serarch-room
-.page-search-room{
+.page-search-room {
     padding-bottom: 100px;
 }
 
 
-.page-search-room .card-search-form{
+.page-search-room .card-search-form {
     margin-top: 35px;
 }
 
-.page-search-room .search_results{
+.page-search-room .search_results {
     padding-top: 40px;
     padding-bottom: 20px;
 }
 
-.page-search-room .search_results h2{
+.page-search-room .search_results h2 {
     font-size: 22px;
 }
 
-.bottom_fixed_section{
+.bottom_fixed_section {
     box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.05);
     padding: 12px 20px;
     position: fixed;
@@ -969,13 +1007,14 @@ ion-item {
     padding: 30px 0;
 }
 
-.book-room-page h3{
+.book-room-page h3 {
     font-weight: 400;
 }
 
 // page-booking-details
-.page-booking-details{
+.page-booking-details {
     padding-top: 40px;
+    padding-bottom: 180px;
 }
 
 .page-booking-details .card-booking-details {
@@ -984,7 +1023,7 @@ ion-item {
     margin-top: 25px;
 }
 
-.card-booking-details table{
+.card-booking-details table {
     line-height: 25px;
 }
 
@@ -1000,11 +1039,11 @@ ion-item {
     color: var(--primary-color);
 }
 
-.card-booking-details ion-row ion-col{
+.card-booking-details ion-row ion-col {
     border-bottom: 1px dashed var(--secondary-color);
 }
 
-.card-booking-details .table_price_breakout td{
+.card-booking-details .table_price_breakout td {
     font-size: 16px;
     font-weight: 400;
     color: var(--text-gray);
@@ -1012,14 +1051,14 @@ ion-item {
 }
 
 
-.exclamation{
+.exclamation {
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 14px;
     margin-left: 25px;
 }
 
-.exclamation span{
+.exclamation span {
     padding: 1px 7px;
     border-radius: 100%;
     font-size: 10px;
@@ -1034,7 +1073,7 @@ ion-item {
     background: var(--red-color);
 }
 
-.exclamation-danger span i{
+.exclamation-danger span i {
     color: var(--color-white);
 }
 
@@ -1047,13 +1086,13 @@ ion-item {
     border-radius: 100%;
 }
 
-.exclamation-success span i{
+.exclamation-success span i {
     color: var(--color-white);
 }
 
 
 // page-booking-cancelation
-.page-booking-cancelation{
+.page-booking-cancelation {
     padding-top: 40px;
 }
 
@@ -1063,7 +1102,7 @@ ion-item {
     margin-bottom: 30px;
 }
 
-.page-booking-cancelation .refund_details .border_bottom_dashed{
+.page-booking-cancelation .refund_details .border_bottom_dashed {
     border-bottom: 1px dashed var(--secondary-color);
 }
 
@@ -1079,7 +1118,7 @@ ion-item {
     font-weight: 500;
 }
 
-.page-booking-cancelation .btn_view_charges{
+.page-booking-cancelation .btn_view_charges {
     font-size: 14px;
     color: var(--text-gray);
     font-weight: 500;
@@ -1113,7 +1152,7 @@ ion-item {
     color: var(--primary-color);
 }
 
-.modalCancellationPolicy  .modal-content {
+.modalCancellationPolicy .modal-content {
     margin-top: 30px;
 }
 
@@ -1131,7 +1170,7 @@ ion-item {
 }
 
 // cart page css
-.page-myCart{
+.page-myCart {
     padding-top: 30px;
     padding-bottom: 180px;
 }
@@ -1151,7 +1190,7 @@ ion-item {
     width: calc(100% - 110px);
 }
 
-.cart_item .item_image img{
+.cart_item .item_image img {
     width: 100px;
     min-height: 100px;
 }
@@ -1165,7 +1204,7 @@ ion-item {
     font-size: 12px;
 }
 
-.cart_item .item_details p i{
+.cart_item .item_details p i {
     font-size: 8px;
     border: 1px solid;
     padding: 2px;
@@ -1194,4 +1233,273 @@ ion-item {
 // all refund list page
 .page-allrefunds {
     padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.refund-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.btn-list {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 2px;
+    width: 100%;
+}
+
+.btn-list h4 {
+    text-align: left;
+}
+
+.refund-list,
+.transactions-list {
+    padding: 0;
+    list-style: none;
+}
+
+.refund-list li,
+.transactions-list li {
+    margin-bottom: 10px;
+}
+
+.refund-list li h4,
+.transactions-list li h4 {
+    font-weight: 400;
+}
+
+.refund-list li h4 span {
+    font-size: 16px;
+    display: block;
+    margin-top: 4px;
+}
+
+.refund-list h4 i,
+.transactions-list p i {
+    font-size: 14px;
+}
+
+// page-transactions
+.page-transactions {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.transactions-list li h4 span,
+.transactions-list li p span {
+    display: block;
+}
+
+.transactions-list li h4 span {
+    margin-top: 5px;
+}
+
+.transactions-list li p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.transactions-list li p span {
+    font-size: 14px;
+}
+
+// page-transaction-details
+.page-transaction-details {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.page-transaction-details .btn-share {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.page-transaction-details .transaction_details {
+    border: 1px solid var(--secondary-color);
+}
+
+.transaction_details .detail_item:not(.transaction_details .detail_item:last-child) {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.transaction_details .detail_item {
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.transaction_details .detail_item h2 {
+    font-weight: 500;
+}
+
+.transaction_details .detail_item p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.transaction_details .detail_item span {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-gray);
+}
+
+.transaction_details .detail_item strong {
+    font-weight: 500;
+}
+
+// page-agentProfile
+.page-agentProfile {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.page-agentProfile .profile_options {
+    border: 1px solid var(--secondary-color);
+}
+
+.profile_options .setting_link:not(.profile_options .setting_link:last-child) {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.profile_options .setting_link button {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: left;
+}
+
+.profile_options .setting_link button:hover {
+    background-color: var(--secondary-color);
+}
+
+// page_generalSattings
+.page_generalSattings {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.page_generalSattings .save_details {
+    margin-top: 35px;
+    padding: 0 20px;
+}
+
+// page_wallet
+.page_wallet {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.wallet_balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 120px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 2px;
+}
+
+.wallet_balance h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-gray);
+    margin-bottom: 5px;
+}
+
+.wallet_balance h1 i {
+    font-size: 20px;
+}
+
+.wallet_balance p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.page_wallet .deposit_money {
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+// dashobard
+
+.dashboard {
+    padding-top: 25px;
+    padding-bottom: 90px;
+}
+
+.dashboard .booking_section,
+.dashboard .payments_section {
+    margin-top: 50px;
+}
+
+.dashboard h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dashboard ion-select{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-gray);
+}
+
+.dashboard .dashboard_cards {
+    min-height: 110px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+ .dashboard_cards h5 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.dashboard_cards p {
+    font-size: 22px;
+}
+
+ .dashboard_cards p strong {
+    font-weight: 500;
+}
+
+.card_bookings{
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.card_bookings p{
+    color: var(--text-gray);
+}
+
+.card_payments p {
+    color: var(--primary-color);
+}
+
+.dashboard .payments_section ion-accordion {
+    margin-bottom: 15px;
+}
+
+.dashboard ion-accordion.accordion-animated>[slot=header] .ion-accordion-toggle-icon {
+    display: none;
+}
+
+.accordion_body{
+    display: none;
 }

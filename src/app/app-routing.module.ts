@@ -34,7 +34,8 @@ const routes: Routes = [
   {
     path: 'search-room',
     loadChildren: () => import('./search-room/search-room.module').then( m => m.SearchRoomPageModule)
-  },  {
+  },
+  {
     path: 'booking-cancelation',
     loadChildren: () => import('./booking-cancelation/booking-cancelation.module').then( m => m.BookingCancelationPageModule)
   },
@@ -50,6 +51,26 @@ const routes: Routes = [
     path: 'refund-list',
     loadChildren: () => import('./refund-list/refund-list.module').then( m => m.RefundListPageModule)
   },
+  {
+    path: 'transaction-history',
+    loadChildren: () => import('./transaction-history/transaction-history.module').then( m => m.TransactionHistoryPageModule)
+  },
+  {
+    path: 'transaction-details',
+    loadChildren: () => import('./transaction-details/transaction-details.module').then( m => m.TransactionDetailsPageModule)
+  },
+  {
+    path: 'agent-profile',
+    loadChildren: () => import('./agent-profile/agent-profile.module').then( m => m.AgentProfilePageModule)
+  },
+  {
+    path: 'general-setting',
+    loadChildren: () => import('./general-setting/general-setting.module').then( m => m.GeneralSettingPageModule)
+  },  {
+    path: 'wallet',
+    loadChildren: () => import('./wallet/wallet.module').then( m => m.WalletPageModule)
+  },
+
 
 ];
 
