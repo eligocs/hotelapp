@@ -8,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class BookingStatusPage implements OnInit {
   segment="todaybookings"
 
-  constructor() { }
+  today = {
+    bookings: null
+  };
+
+  past = {
+    bookings: null
+  };
+
+  constructor() { 
+    this.today.bookings = "all";
+    this.past.bookings = "all";
+  }
 
   ngOnInit() {
   }
