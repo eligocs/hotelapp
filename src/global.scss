@@ -94,6 +94,10 @@ h4 {
     background-color: var(--yellow-color) !important;
 }
 
+.bg-white{
+    background-color: var(--color-white) !important;
+}
+
 .badge {
     font-size: 12px;
     font-weight: 300;
@@ -397,7 +401,7 @@ ion-anchor {
 }
 
 .mb-20 {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .mb-25 {
@@ -919,6 +923,7 @@ ion-item {
     color: var(--primary-color);
     border-radius: 3px;
     text-transform: capitalize;
+    --indicator-color : transparent!important;
 }
 
 .tab-segment .segment-button-checked {
@@ -968,11 +973,6 @@ ion-item {
 
 
 // page-serarch-room
-.page-search-room {
-    padding-bottom: 100px;
-}
-
-
 .page-search-room .card-search-form {
     margin-top: 35px;
 }
@@ -1358,11 +1358,6 @@ ion-item {
 }
 
 // page-agentProfile
-.page-agentProfile {
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
 .page-agentProfile .profile_options {
     border: 1px solid var(--secondary-color);
 }
@@ -1439,7 +1434,6 @@ ion-item {
 
 .dashboard {
     padding-top: 25px;
-    padding-bottom: 90px;
 }
 
 .dashboard .booking_section,
@@ -1492,14 +1486,138 @@ ion-item {
     color: var(--primary-color);
 }
 
-.dashboard .payments_section ion-accordion {
-    margin-bottom: 15px;
+.dashboard .acc_group .accordion {
+    margin-bottom: 20px;
 }
 
-.dashboard ion-accordion.accordion-animated>[slot=header] .ion-accordion-toggle-icon {
+.dashboard .accordion_body{
     display: none;
+    padding: 6px;
+    margin-top: 10px;
 }
 
-.accordion_body{
-    display: none;
+
+.dashboard .acc_title {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    padding: 4px;
 }
+
+.dashboard .card_payments.bg-white{
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--secondary-color);
+}
+
+.dashboard .amount_details .row_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+}
+
+.dashboard .row_details .paid_status {
+    padding: 5px 11px;
+    background-color: var(--red-color);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--color-white);
+}
+
+.dashboard .row_details p {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--primary-color);
+    line-height: 16px;
+}
+
+.dashboard .row_details strong {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+    display: block;
+    line-height: 20px;
+}
+
+.dashboard .row_details strong i {
+    font-size: 12px;
+}
+
+.dashboard .row_details .arrow_icon {
+    font-size: 14px;
+    display: block;
+}
+
+.visibilty_hidden {
+    visibility: hidden;
+}
+
+// sweet alert
+.swal2-title {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: var(--primary-color) !important;
+}
+
+.swal2-html-container {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: var(--text-gray) !important;
+}
+
+.swal2-actions button {
+    flex: 0 0 100% !important;
+    min-height: 53px;
+    font-size: 17px !important;
+    font-weight: 500;
+    border-radius: 5px !important;
+    margin-bottom: 10px;
+}
+
+.swal2-actions button:focus{
+    box-shadow: none !important; 
+}
+
+.swal2-actions button.swal2-confirm {
+    background-color: var(--primary-color);
+}
+
+.swal2-actions button.swal2-cancel {
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+// bottom_tab_bar
+.bottom_tab_bar ion-tab-button{
+    font-size: 9px;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+
+.bottom_tab_bar ion-tab-button img{
+    margin-bottom: 8px;
+}
+
+.bottom_tab_bar ion-tab-bar {
+    min-height: 85px;
+}
+
+
+// diffrent input styling for diffrent pages 
+.page-booking-status .control-label,
+.page-allrefunds .control-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.page-booking-status .form-control,
+.page-allrefunds .form-control {
+    font-weight: 300;
+}
+
+
