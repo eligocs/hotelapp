@@ -18,12 +18,13 @@
     <div class="content_padding">
       <!-- booking_section -->
       <div class="booking_section">
+        <!-- filter -->
         <div class="d-flex ion-justify-content-between mb-20">
           <h4 class="text-gray">Room Booking Status</h4>
-          <ion-select class="" placeholder="Today">
-            <ion-select-option value="one">Today</ion-select-option>
-            <ion-select-option value="two">Upcoming</ion-select-option>
-            <ion-select-option value="three">Past</ion-select-option>
+          <ion-select [(ngModel)]="pending.payment">
+            <ion-select-option value="today">Today</ion-select-option>
+            <ion-select-option value="upcoming">Upcoming</ion-select-option>
+            <ion-select-option value="past">Past</ion-select-option>
           </ion-select>
         </div>
 
@@ -44,30 +45,329 @@
         </div>
       </div>
 
-      <!-- card_payments -->
+      <!-- payments_section -->
       <div class="payments_section">
+        <!-- filter -->
         <div class="d-flex ion-justify-content-between mb-20">
           <h4 class="text-gray">Payment Status</h4>
-          <ion-select class="" placeholder="Today">
-            <ion-select-option value="one">Today</ion-select-option>
-            <ion-select-option value="two">Upcoming</ion-select-option>
-            <ion-select-option value="three">Past</ion-select-option>
+          <ion-select  [(ngModel)]="booking.filter">
+            <ion-select-option value="today">Today</ion-select-option>
+            <ion-select-option value="upcoming">Upcoming</ion-select-option>
+            <ion-select-option value="past">Past</ion-select-option>
           </ion-select>
         </div>
 
-        <!-- payment status cards -->
-        <div class="dashboard_cards card_payments">
-          <h5>Pending Amount</h5>
-          <p class="ion-text-center"><strong><i class="fa-solid fa-indian-rupee-sign"></i> 50,000</strong></p>
-        </div>
         <!-- custom accordion -->
-        <div class="acc">
-        <div class="accordion">
-          <div class="acc_title">Accordion</div>
-          <div class="accordion_body bg-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate voluptate voluptatibus voluptatum commodi odit ut laudantium dolore modi iusto?
+        <div class="acc_group">
+          <div class="main_div">
+            <!-- card_payments -->
+            <div class="dashboard_cards card_payments">
+              <h5>Pending Amount</h5>
+              <p class="ion-text-center"><strong><i class="fa-solid fa-indian-rupee-sign"></i> 50,000</strong></p>
+            </div> 
+          
+            <!-- card/accordion -->
+            <div class="accordion">
+              <div class="acc_title">See details</div>
+              <div class="accordion_body bg-secondary">
+                <h3 class="text-primary fw_500 my-15">Total booking need to pay <span>(10)</span></h3>
+                <div class="amount_details">
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">25468</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">6-Sep</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">7-Sep</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">35478</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 7,600</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">1-Oct</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">4-Oct</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">24457</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 9,400</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">7-Oct</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">12-Oct</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">51785</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 5,000</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">2-Nov</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">7-Nov</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">21478</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 13,500</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">4-June</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">12-June</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+
+          <div class="main_div">
+            <!-- card_payments -->
+            <div class="dashboard_cards card_payments">
+              <h5>Today's Pending  Amount</h5>
+              <p class="ion-text-center"><strong><i class="fa-solid fa-indian-rupee-sign"></i> 20,000</strong></p>
+            </div>
+            <!-- card/accordion -->
+            <div class="accordion">
+              <div class="acc_title">See details</div>
+              <div class="accordion_body bg-secondary">
+                <h3 class="text-primary fw_500 my-15">Total booking need to pay <span>(10)</span></h3>
+                <div class="amount_details">
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">25468</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 12,200</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">6-Sep</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">7-Sep</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">35478</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 7,600</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">1-Oct</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">4-Oct</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">24457</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 9,400</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">7-Oct</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">12-Oct</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">51785</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 5,000</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">2-Nov</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">7-Nov</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+                  </div>
+
+                  <!-- row_details -->
+                  <div class="row_details">
+                    <div>
+                      <p>Booking ID : <span class="fw_400">21478</span></p>
+                      <strong><i class="fa-solid fa-indian-rupee-sign"></i> 13,500</strong>
+                    </div>
+
+                    <div>
+                      <p>Check in</p>
+                      <p class="fw_400">4-June</p>
+                    </div>
+
+                    <div>
+                      <div><i class="fa-solid fa-arrow-right visibilty_hidden"></i></div>
+                      <div><i class="fa-solid fa-arrow-right arrow_icon"></i></div>
+                    </div>
+
+                    <div>
+                      <p>Check out</p>
+                      <p class="fw_400">12-June</p>
+                    </div>
+                    
+                    <div>
+                      <div class="paid_status">Unpaid</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
